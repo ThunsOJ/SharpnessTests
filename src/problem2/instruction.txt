@@ -1,0 +1,1 @@
+See the solution in different repo: https://github.com/ThunsOJ/FindLinks

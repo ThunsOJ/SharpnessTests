@@ -22,10 +22,13 @@ public class AnagramCheck {
     private void startCheck(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Please provide two strings to compare and check if it's an anagram.");
+
         System.out.print("First string: ");
         String input1 = scan.nextLine().trim();
         System.out.print("second string: ");
         String input2 = scan.nextLine().trim();
+
+        scan.close();
 
         if(isAnagram(input1, input2)){
             System.out.println("The strings: " + "\"" + input1 + "\""
@@ -36,7 +39,6 @@ public class AnagramCheck {
                     + " and " + "\"" + input2 + "\""
                     + " was not an anagram.");
         }
-        scan.close();
     }
 
     public static void main(String[] args) {
