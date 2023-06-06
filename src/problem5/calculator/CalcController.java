@@ -94,7 +94,7 @@ public class CalcController {
 
         for (char c : chars) {
             if (!Character.isDigit(c)) {
-                if (!String.valueOf(c).matches("[*/+-]")) {
+                if (input.matches("[*/+-]")) {
                     return false;
                 }
                 hasOperator = true;
