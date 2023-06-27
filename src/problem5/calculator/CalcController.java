@@ -80,7 +80,7 @@ public class CalcController {
         if(expression.stream().anyMatch(s -> s.contains("+")))
             expression = addition.numbersToCalculate(expression);
 
-        System.out.println("The answer is: "+expression);
+        System.out.println("The answer is: " + expression);
     }
 
     public boolean isValid(String input) {

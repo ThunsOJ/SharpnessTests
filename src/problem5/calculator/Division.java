@@ -11,7 +11,7 @@ public class Division implements Calculator{
 
         while (i < updatedCalculation.size()) {
             String currentElement = updatedCalculation.get(i);
-            if (currentElement.equals("+")) {
+            if (currentElement.equals("/")) {
                 if (i - 1 < 0 || i + 1 >= updatedCalculation.size()) {
                     System.out.println("Invalid expression: Operator '+' is the last element.");
                     break;
